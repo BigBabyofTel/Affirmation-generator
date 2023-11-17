@@ -1,0 +1,16 @@
+* {
+    font-size: 25px;
+    background-color: #530BE6;
+    color: #E6D90B;
+}
+h1 {
+    text-align: center;
+    margin: 1rem;
+}
+div {
+    border: 3px solid red;
+    margin: auto;
+    padding: 2rem;
+    width: 10rem;
+    text-align: center;
+}
