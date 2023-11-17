@@ -14,3 +14,6 @@ div {
     width: 10rem;
     text-align: center;
 }
+.borders, h2{
+    background-color: #473866;
+}
