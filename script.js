@@ -9,10 +9,13 @@ const randomAnxietyAffirm = anxietyAffirm[Math.floor(Math.random() * anxietyAffi
 //target elements
 const dailyDisplay = document.getElementById("dailydisplay");
 const dailyButton = document.getElementById("dailybutton");
+const nextDaily = document.getElementById("nextdaily");
 const morningDisplay = document.getElementById("morningdisplay");
 const morningButton = document.getElementById("morningbutton");
+const nextMorning = document.getElementById("nextmorning");
 const anxietyDisplay = document.getElementById("anxietydisplay");
-const anxietyButton = document.getElementById("anxietybutton"); 
+const anxietyButton = document.getElementById("anxietybutton");
+const nextAnxiety = document.getElementById("nextanxiety"); 
 
 //functions for event handler
 const displayDaily = () => {
@@ -27,7 +30,13 @@ const displayAnxiety = () => {
     anxietyDisplay.innerHTML = `${randomAnxietyAffirm}`;
 }
 
+const nextDailyDisplay = () => {
+    displayDaily.hidden = true;
+    displayDaily.innerHTML = `${randomDailyAffirm}`;
+}
+
 //event handler
 dailyButton.addEventListener('click', displayDaily);
 morningButton.addEventListener('click', displayMorning);
 anxietyButton.addEventListener('click', displayAnxiety);
+nextDaily.addEventListener('click', nextDailyDisplay);

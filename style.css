@@ -21,3 +21,6 @@ div {
 .borders, h2, p{
     background-color: #473866;
 }
+footer {
+    width: auto;
+}
