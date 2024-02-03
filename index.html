@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-<link rel="stylesheet" href="style.css">
+        <link href="./output.css" rel="stylesheet">
+        <title>Affirmation Generator</title>
     </head>
-    <body>
-        <h1>Affirmation Generator</h1>
-        <div class="borders"><h2>Your daily affirmation is:</h2>
-            <p id="dailydisplay"></p><br>
-            <button id="dailybutton">Click Here</button id="nextdaily"><button>New Affirmation</button></div>
-        <div class="borders"><h2>Your morning affirmation is:</h2><p id="morningdisplay"></p><br><button id="morningbutton">Click Here</button><button id="nextmorning">New Affirmation</button></div>
-        <div class="borders"><h2>Your affirmation for anxiety is:</h2><p id="anxietydisplay"></p><br><button id="anxietybutton">Click Here</button><button id="nextanxiety">New Affirmation</button></div>
-        <footer><h2>Version 1.1</h2></footer>
-        <script src="/script.js"></script>
+    <body class="bg-blue-400 flex items-center flex-col m-5">
+        <h1 class="text-6xl p-5 flex text-center">Affirmation Generator</h1>
+        <div class="p-5 border m-5 w-1/4 flex flex-col items-center"><h2 class="text-center">Your daily affirmation is:</h2><p id="dailydisplay" class="text-center p-2"></p><br><button id="dailybutton">Click Here</button id="nextdaily"></div>
+        <div class="p-5 border m-5 w-1/4 flex flex-col items-center"><h2 class="text-center">Your morning affirmation is:</h2><p id="morningdisplay" class="text-center"></p><br><button id="morningbutton">Click Here</button></div>
+        <div class="p-5 border m-5 w-1/4 flex flex-col items-center"><h2 class="text-center">Your affirmation for anxiety is:</h2><p id="anxietydisplay" class="text-center"></p><br><button id="anxietybutton">Click Here</button></div>
+        <footer><h2>Version 2.1</h2></footer>
+        <script src="/index.js"></script>
     </body>
 </html>
