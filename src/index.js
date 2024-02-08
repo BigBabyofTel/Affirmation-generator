@@ -13,7 +13,10 @@ var anxietyDisplay = document.getElementById("anxietydisplay");
 var anxietyButton = document.getElementById("anxietybutton");
 //functions for event handler
 var displayDaily = function () {
-    return dailyDisplay.innerHTML = "".concat(randomDailyAffirm);
+    dailyDisplay.innerHTML = "".concat(randomDailyAffirm);
+    return setTimeout(function () {
+        return dailyDisplay.innerHTML = '';
+    }, 3000);
 };
 var displayMorning = function () {
     morningDisplay.innerHTML = "".concat(randomMorningAffirm);

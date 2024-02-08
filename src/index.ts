@@ -15,8 +15,11 @@ const anxietyDisplay = document.getElementById("anxietydisplay") as HTMLElement;
 const anxietyButton = document.getElementById("anxietybutton") as HTMLElement;
 
 //functions for event handler
-const displayDaily = ():string => {
-    return dailyDisplay.innerHTML = `${randomDailyAffirm}`;
+const displayDaily = () => {
+    dailyDisplay.innerHTML = `${randomDailyAffirm}`
+     return setTimeout(() => {
+        return dailyDisplay.innerHTML = '';
+    }, 3000)
 }
 
 const displayMorning = () => {

@@ -5,9 +5,12 @@
     "target": "ESNext",
     "module": "ESNext",
     "moduleDetection": "force",
-    "jsx": "react-jsx", // support JSX
     "allowJs": true, // allow importing `.js` from `.ts`
-
+    "baseUrl": ".", // This must be specified if "paths" is.
+    "paths": {
+            "*": ["src/*"], // Matches all module imports in the 'src' folder.
+            "index": ["src/index.ts"] // Matches 'specificModule' import.
+        },
     // Bundler mode
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
